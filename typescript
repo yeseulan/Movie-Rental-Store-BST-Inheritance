@@ -1,0 +1,191 @@
+Script started on Wed 14 Mar 2018 11:18:20 PM PDT
+yeseul90@uw1-320-12:~$ vi algrind --leak-check=full ./assignment4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pg++ *.cpp -g -o assignment4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pvi actionfactory.cppg++ *.cpp -g -o assignment4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind --leak-check=full ./assignment4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci [K[Kls
+action.cpp	   borrow.cpp	comedy.h	    Desktop	 history.h	   MovieRentalStore	 return.cpp
+actionfactory.cpp  borrow.h	customer.cpp	    Documents	 inventory.cpp	   movieRentalStore.cpp  return.h
+actionfactory.h    BST.cpp	customer.h	    Downloads	 inventory.h	   movieRentalStore.h	 Templates
+action.h	   BST.h	data4commands.txt   drama.cpp	 movie.cpp	   Music		 typescript
+a.out		   classic.cpp	data4customers.txt  drama.h	 moviefactory.cpp  Pictures		 Videos
+assignment1	   classic.h	data4movies.txt     hashTable.h  moviefactory.h    Public
+assignment4	   comedy.cpp	data-shell	    history.cpp  movie.h	   rentalMain.cpp
+yeseul90@uw1-320-12:~$ lsvi algrind --leak-check=full ./assignment4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pg++ *.cpp -g -o assignment4
+yeseul90@uw1-320-12:~$ g++ *.cpp -g -o assignment4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kvi algrind --leak-check=full ./assignment4
+==24604== Memcheck, a memory error detector
+==24604== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==24604== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==24604== Command: ./assignment4
+==24604== 
+***** creating customers *******
+***** creating movies *******
+Invalid movie type: Z
+Invalid movie type: Z
+***** creating commands *******
+----------------------------- INVENTORY ------------------------------
+
+F, 10, Woody Allen, Annie Hall, 1977
+ F, 10, Joel Coen, Fargo, 1996
+ F, 10, John Landis, National Lampoon's Animal House, 1978
+ F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
+ F, 10, Nora Ephron, Sleepless in Seattle, 1993
+ F, 10, Rob Reiner, When Harry Met Sally, 1989
+ F, 10, Nora Ephron, You've Got Mail, 1998
+ D, 10, Barry Levinson, Good Morning Vietnam, 1988
+ D, 10, Clint Eastwood, Unforgiven, 1992
+ D, 10, Gus Van Sant, Good Will Hunting, 2000
+ D, 10, Jonathan Demme, Silence of the Lambs, 1991
+ D, 10, Nancy Savoca, Dogfight, 1991
+ D, 10, Phillippe De Broca, King of Hearts, 1967
+ D, 10, Steven Spielberg, Schindler's List, 1993
+ C, 10, George Cukor, Holiday, Cary Grant 9 1938
+ C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
+ C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
+ C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
+ C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
+ C, 10, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+ C, 10, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+ C, 10, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+ C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
+ C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+ C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
+ C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+ C, 10, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+ C, 10, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ -------------------------------------------------------------------
+
+
+----------- printing transactions for customer: 1000 -----------
+----------------------------------------------------------------
+
+
+----------- printing transactions for customer: 5000 -----------
+----------------------------------------------------------------
+
+
+----------- printing transactions for customer: 8000 -----------
+----------------------------------------------------------------
+
+Invalid movie or genre type: D Z
+Invalid command 
+Invalid command 
+The customer does not exist.
+Movie doesn't exist.
+Invalid movie or genre type: Z F
+Cannot borrow an item that is not in stock.
+Cannot borrow an item that is not in stock.
+Cannot borrow an item that is not in stock.
+Movie doesn't exist.
+----------------------------- INVENTORY ------------------------------
+
+F, 9, Woody Allen, Annie Hall, 1977
+ F, 9, Joel Coen, Fargo, 1996
+ F, 9, John Landis, National Lampoon's Animal House, 1978
+ F, 10, Gore Verbinski, Pirates of the Caribbean, 2003
+ F, 9, Nora Ephron, Sleepless in Seattle, 1993
+ F, 9, Rob Reiner, When Harry Met Sally, 1989
+ F, 9, Nora Ephron, You've Got Mail, 1998
+ D, 9, Barry Levinson, Good Morning Vietnam, 1988
+ D, 9, Clint Eastwood, Unforgiven, 1992
+ D, 9, Gus Van Sant, Good Will Hunting, 2000
+ D, 9, Jonathan Demme, Silence of the Lambs, 1991
+ D, 8, Nancy Savoca, Dogfight, 1991
+ D, 9, Phillippe De Broca, King of Hearts, 1967
+ D, 9, Steven Spielberg, Schindler's List, 1993
+ C, 9, George Cukor, Holiday, Cary Grant 9 1938
+ C, 10, George Cukor, Holiday, Katherine Hepburn 9 1938
+ C, 10, Victor Fleming, Gone With the Wind, Clark Gable 2 1939
+ C, 10, Victor Fleming, Gone With the Wind, Vivien Leigh 2 1939
+ C, 10, Victor Fleming, The Wizard of Oz, Judy Garland 7 1939
+ C, 9, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+ C, 9, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+ C, 9, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+ C, 10, Michael Curtiz, Casablanca, Humphrey Bogart 8 1942
+ C, 10, Michael Curtiz, Casablanca, Ingrid Bergman 8 1942
+ C, 10, Frank Capra, It's a Wonderful Life, Donna Reed 11 1946
+ C, 10, Frank Capra, It's a Wonderful Life, James Steward 11 1946
+ C, 9, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+ C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ -------------------------------------------------------------------
+
+
+----------- printing transactions for customer: 1000 -----------
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ B C, 9, George Cukor, The Philadelphia Story, Cary Grant 5 1940
+ B D, 9, Gus Van Sant, Good Will Hunting, 2000
+ B C, 9, George Cukor, The Philadelphia Story, Katherine Hepburn 5 1940
+ B D, 9, Barry Levinson, Good Morning Vietnam, 1988
+----------------------------------------------------------------
+
+
+----------- printing transactions for customer: 1111 -----------
+ B C, 9, George Cukor, Holiday, Cary Grant 9 1938
+ B C, 9, John Huston, The Maltese Falcon, Humphrey Bogart 10 1941
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ B C, 9, Stanley Kubrick, A Clockwork Orange, Malcolm McDowell 2 1971
+----------------------------------------------------------------
+
+
+----------- printing transactions for customer: 5000 -----------
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ R C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ R C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ R C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+----------------------------------------------------------------
+
+
+----------- printing transactions for customer: 8000 -----------
+ B F, 9, John Landis, National Lampoon's Animal House, 1978
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ R F, 9, Nora Ephron, You've Got Mail, 1998
+ B F, 9, Nora Ephron, You've Got Mail, 1998
+----------------------------------------------------------------
+
+
+----------- printing transactions for customer: 8888 -----------
+ B C, 0, Hal Ashby, Harold and Maude, Ruth Gordon 3 1971
+ B D, 8, Nancy Savoca, Dogfight, 1991
+ B D, 9, Jonathan Demme, Silence of the Lambs, 1991
+ B F, 9, Rob Reiner, When Harry Met Sally, 1989
+ B F, 9, Woody Allen, Annie Hall, 1977
+----------------------------------------------------------------
+
+==24604== 
+==24604== HEAP SUMMARY:
+==24604==     in use at exit: 72,704 bytes in 1 blocks
+==24604==   total heap usage: 803 allocs, 802 frees, 133,288 bytes allocated
+==24604== 
+==24604== LEAK SUMMARY:
+==24604==    definitely lost: 0 bytes in 0 blocks
+==24604==    indirectly lost: 0 bytes in 0 blocks
+==24604==      possibly lost: 0 bytes in 0 blocks
+==24604==    still reachable: 72,704 bytes in 1 blocks
+==24604==         suppressed: 0 bytes in 0 blocks
+==24604== Reachable blocks (those to which a pointer was found) are not shown.
+==24604== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==24604== 
+==24604== For counts of detected and suppressed errors, rerun with: -v
+==24604== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+yeseul90@uw1-320-12:~$ end
+No command 'end' found, did you mean:
+ Command 'eid' from package 'id-utils' (universe)
+ Command 'send' from package 'nmh' (universe)
+ Command 'send' from package 'mailutils-mh' (universe)
+ Command 'esd' from package 'pulseaudio-esound-compat' (universe)
+ Command 'nd' from package 'nd' (universe)
+ Command 'bnd' from package 'bnd' (universe)
+ Command 'env' from package 'coreutils' (main)
+ Command 'ent' from package 'ent' (universe)
+ Command 'ed' from package 'ed' (main)
+ Command 'and' from package 'and' (universe)
+ Command 'snd' from package 'snd-nox' (universe)
+ Command 'snd' from package 'snd-gtk-jack' (universe)
+ Command 'snd' from package 'snd-gtk-pulse' (universe)
+end: command not found
+yeseul90@uw1-320-12:~$ /ei[Kxit
+bash: /exit: No such file or directory
+yeseul90@uw1-320-12:~$ exit
+exit
+
+Script done on Wed 14 Mar 2018 11:19:01 PM PDT
